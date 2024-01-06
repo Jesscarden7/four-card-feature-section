@@ -1,0 +1,94 @@
+.MainContainer {
+  padding-top: 32px;
+}
+
+.Title {
+  text-align: center;
+}
+
+.Title h4 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 200;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.Title h3 {
+  color: hsl(234, 12%, 34%);
+  font-size: 30px;
+  margin: 5px;
+}
+
+.Title p {
+  color: hsl(229, 6%, 66%);
+  font-size: 14px;
+  margin: 16px;
+  line-height: 1.5;
+}
+
+.CardsContainer {
+  width: 76%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Card {
+  flex-basis: 25%; /* Similar al width */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.CardContent {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 8px 22px 0 rgba(128, 128, 129, 0.37);
+}
+
+.CardContent h4 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.CardContent p {
+  color: hsl(229, 6%, 66%);
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.ImgContainer {
+  margin-top: 60px;
+  text-align: right;
+}
+
+.ImgContainer img {
+  width: 20%;
+}
+
+@media (max-width: 376px) {
+  .CardsContainer {
+    flex-direction: column;
+  }
+
+  .Card {
+    gap: 0px;
+  }
+
+  .CardContent {
+    margin-bottom: 25px;
+  }
+
+  .Title h4 {
+    font-size: 25px;
+  }
+
+  .Title h3 {
+    font-size: 25px;
+  }
+}
